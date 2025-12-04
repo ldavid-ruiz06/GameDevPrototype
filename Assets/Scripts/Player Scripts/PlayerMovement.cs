@@ -59,17 +59,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // limit camera Y-Axis
-        if (!body.stolenHead)
-        {
-            float angleIncrement = lookValue.y * Time.deltaTime;
+        float angleIncrement = lookValue.y * Time.deltaTime;
 
-            eulerAngles = cam.transform.localEulerAngles;
-            if(eulerAngles.x >  180f) eulerAngles.x -= 360f;
-            eulerAngles.x = Mathf.Clamp(eulerAngles.x - angleIncrement, -40f, 40f);
-            cam.transform.localEulerAngles = eulerAngles;
-            arm.transform.localEulerAngles = eulerAngles;
-        }
-
+        eulerAngles = cam.transform.localEulerAngles;
+        if(eulerAngles.x >  180f) eulerAngles.x -= 360f;
+        eulerAngles.x = Mathf.Clamp(eulerAngles.x - angleIncrement, -40f, 40f);
+        cam.transform.localEulerAngles = eulerAngles;
+        arm.transform.localEulerAngles = eulerAngles;
 
 
         // push and move

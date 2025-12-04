@@ -25,6 +25,7 @@ public class PlayerBodyManager : MonoBehaviour
         // fake parts
         fakeHead.GetComponent<Renderer>().enabled = false;
         fakeHead.GetComponent<Collider>().enabled = false;
+        fakeHead.GetComponentInChildren<Camera>().enabled = false;
         fakeArm.GetComponent<Renderer>().enabled = false;
         fakeArm.GetComponent<Collider>().enabled = false;
         fakeLeg.GetComponentInChildren<Renderer>().enabled = false;

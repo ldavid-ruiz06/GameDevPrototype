@@ -243,7 +243,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: FakeHead
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9163572736496076967, guid: ba84d4f26f45566439f5c745c1ca9b1a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9163572736496076967, guid: ba84d4f26f45566439f5c745c1ca9b1a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -834,6 +839,10 @@ PrefabInstance:
     - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655151798360605890, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4844063821037674005, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_Name
