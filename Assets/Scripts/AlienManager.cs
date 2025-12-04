@@ -1,0 +1,27 @@
+using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.Events;
+
+public class AlienManager : MonoBehaviour
+{
+    public static AlienManager instance;
+    public List<Alien> aliens;
+
+    void Awake()
+    {
+        if(instance == null) instance = this;
+        else Destroy(this);
+    }
+
+    void AddAlien(Alien alien)
+    {
+        aliens.Add(alien);
+    }
+
+    void RemoveAlien(Alien alien)
+    {
+        aliens.Remove(alien);
+    }
+
+    
+}
