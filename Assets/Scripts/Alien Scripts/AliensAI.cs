@@ -5,7 +5,7 @@ public class AliensAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsGround, playerLayer;
     public GameObject projectile;
 
     public float walkPointRange = 10f;
@@ -24,7 +24,7 @@ public class AliensAI : MonoBehaviour
     private void Awake()
     {
         
-        player = GameObject.Find("Player1").transform;
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
 
         if (agent != null)
@@ -44,8 +44,8 @@ public class AliensAI : MonoBehaviour
         if (player == null || agent == null || inContactAttack) return;
 
         // Detecta al jugador por LayerMask
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
 
         // Maquina de estados
         if (!playerInSightRange && !playerInAttackRange)
@@ -143,7 +143,7 @@ public class AliensAI : MonoBehaviour
         Debug.Log("ALIEN TOCA AL JUGADOR!");
 
         // Array con nombres exactos de cosas robables
-        string[] robables = { "Arm1","AssaultRifle" };    
+        string[] robables = { "Arm","Legs", "Head"};    
         string elegido = robables[Random.Range(0, robables.Length)];
 
         Transform robado = player.Find(elegido); // player ya es la referencia al Player1
@@ -151,7 +151,7 @@ public class AliensAI : MonoBehaviour
         if (robado != null)
         {
             Debug.Log($"¡ROBADO! → {elegido}");
-            robado.gameObject.SetActive(false);
+            //robado.gameObject.SetActive(false);
         }
         else
         {
