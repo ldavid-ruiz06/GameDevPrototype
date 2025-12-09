@@ -7,9 +7,11 @@ public class Shoot : MonoBehaviour
     public GameObject shootPoint;
     public float range;
     public float angle;
+    public float cooldown;
     public LayerMask enemyLayer;
-    
 
+    
+    private float nextShoot = 0; 
     public void OnFire(InputValue value)
     {
         PlayerBodyManager body = GetComponent<PlayerBodyManager>();
@@ -18,9 +20,14 @@ public class Shoot : MonoBehaviour
         {
             if (!body.stolenArm)
             {
-                GameObject clone = Instantiate(prefab);
-                clone.transform.position = shootPoint.transform.position;
-                clone.transform.rotation = shootPoint.transform.rotation;
+                if(nextShoot < Time.time)
+                {    
+                    GameObject clone = Instantiate(prefab);
+                    clone.transform.position = shootPoint.transform.position;
+                    clone.transform.rotation = shootPoint.transform.rotation;
+
+                    nextShoot = Time.time + cooldown;
+                }
             }
             else if(body.stolenArm)
             {
