@@ -21,6 +21,13 @@ public class AliensAI : MonoBehaviour
     private float nextPatrolSearch = 0f;
     private bool inContactAttack = false;
 
+
+    // finite state machine 
+    enum State
+    {
+      Idle, Patrolling, Escaping, ChasingPlayer, StealingPlayer  
+    };
+
     private void Awake()
     {
         

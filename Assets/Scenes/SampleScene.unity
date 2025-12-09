@@ -527,7 +527,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.25
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 93dc93341ce8f4642a6ef2b6e77134ff, type: 2}
   m_BuildHeightMesh: 0
@@ -940,11 +940,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2739482201898124601, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845254254962562991, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
     - target: {fileID: 7017417964648574890, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_Name
       value: Alien
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2739482201898124601, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
