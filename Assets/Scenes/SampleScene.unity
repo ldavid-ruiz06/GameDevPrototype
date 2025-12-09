@@ -282,7 +282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8079424635256752151, guid: d62da9f607cd58d4ea7938edb655ed63, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.96
+      value: 6.93
       objectReference: {fileID: 0}
     - target: {fileID: 8079424635256752151, guid: d62da9f607cd58d4ea7938edb655ed63, type: 3}
       propertyPath: m_LocalPosition.y
@@ -853,8 +853,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: angle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: range
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: cooldown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: anglePlayer
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972430890951423517, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: enemyLayer.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 4655151798360605890, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_Enabled

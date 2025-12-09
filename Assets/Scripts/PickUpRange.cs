@@ -27,8 +27,8 @@ public class PickUpRange : MonoBehaviour
     {
         print("In range!");
         if(parent.name == "FakeHead") body.stolenHead = false;
-        if(parent.name == "FakeArm") body.stolenArm = false;
-        if(parent.transform.parent.name == "FakeLeg") body.stolenLeg = false;
+        else if(parent.name == "FakeArm") body.stolenArm = false;
+        else if(parent.transform.parent.name == "FakeLeg") body.stolenLeg = false;
     }
 
     void Update()

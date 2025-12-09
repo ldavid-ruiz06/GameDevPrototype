@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        print(value.Get<Vector2>());
         movementValue = value.Get<Vector2>() * speed;
     }
 
