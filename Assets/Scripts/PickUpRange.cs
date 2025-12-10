@@ -7,6 +7,7 @@ public class PickUpRange : MonoBehaviour
     public float range;
     public GameObject player;
     public PlayerBodyManager body;
+    public GameObject alien;
 
     void Start()
     {
@@ -25,10 +26,11 @@ public class PickUpRange : MonoBehaviour
 
     public void pickUp()
     {
-        print("In range!");
         if(parent.name == "FakeHead") body.stolenHead = false;
         else if(parent.name == "FakeArm") body.stolenArm = false;
         else if(parent.transform.parent.name == "FakeLeg") body.stolenLeg = false;
+
+        alien.GetComponent<AliensAI>().stoleSomething = false;
     }
 
     void Update()
@@ -36,8 +38,14 @@ public class PickUpRange : MonoBehaviour
         if(parent.GetComponent<Renderer>().enabled)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
-            if(distance < range){ pickUp();    
-            print(this.name + " player is in reach");}
+            if(distance < range){ pickUp();}    
+            
+            if(alien != null)
+            {
+                Transform pos = alien.GetComponent<AliensAI>().posReference.transform;
+                transform.position = pos.position;
+
+            }
         }
     }
 

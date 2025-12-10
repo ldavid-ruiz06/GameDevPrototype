@@ -15,6 +15,7 @@ public class AliensAI : MonoBehaviour
     public float sightRange = 15f;
     public float attackRange = 8f;
     public bool stoleSomething = false;
+    public GameObject posReference;
 
     private bool playerInSightRange, playerInAttackRange;
     private Vector3 walkPoint;
@@ -110,9 +111,6 @@ public class AliensAI : MonoBehaviour
             alienState = State.ChasingPlayer;
             return;
         }
-
-
-        
     }
 
     private void Idle()
@@ -148,8 +146,9 @@ public class AliensAI : MonoBehaviour
 
         if (robado != null)
         {
-            Debug.Log($"¡ROBADO! → {elegido}");
             stoleSomething = true;
+            // desactiva el objecto
+            player.GetComponent<PlayerBodyManager>().StealBody(elegido, this.gameObject);
         }
         else
         {

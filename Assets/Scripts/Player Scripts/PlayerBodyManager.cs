@@ -61,7 +61,25 @@ public class PlayerBodyManager : MonoBehaviour
         }
     }
 
-
+    public void StealBody(string part, GameObject alien)
+    {
+        print("Stole " + part);
+        switch(part)
+        {
+            case "Head": 
+                stolenHead = true;
+                fakeHead.GetComponent<PickUpRange>().alien = alien;
+                break;
+            case "Arm": 
+                stolenArm = true;
+                fakeArm.GetComponent<PickUpRange>().alien = alien;
+                break;
+            case "Legs": 
+                stolenLeg = true;
+                fakeLeg.GetComponent<PickUpRange>().alien = alien;
+                break;
+        }
+    }
     
     
 }
