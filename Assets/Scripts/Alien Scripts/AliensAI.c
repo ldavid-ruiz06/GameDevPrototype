@@ -3,6 +3,12 @@ using UnityEngine.AI;
 
 public class AliensAI : MonoBehaviour
 {
+    public Animator anim;
+    public float patrolSpeed = 2.5f;
+    public float chaseSpeed = 8f;
+    public float fleeSpeed = 5f;
+
+
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
@@ -58,6 +64,9 @@ public class AliensAI : MonoBehaviour
 
     private void Patrolling()
     {
+        agent.speed = patrolSpeed;   // <-------------------------SPEED CONTROL
+        anim.SetBool("isRunning", false);
+        anim.SetBool("isWalking", true);
         // Si no tiene punto de patrulla, busca uno nuevo
         if (!walkPointSet) SearchWalkPoint();
 
@@ -96,8 +105,10 @@ public class AliensAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        agent.speed = chaseSpeed;    // <-------------------------SPEED CONTROL
         // Cada frame le dice al agente que vaya a donde esta el jugador
         agent.SetDestination(player.position);
+        anim.SetBool("isRunning", true); //<-----------------------------------------Chase BOOL
     }
 
     private void AttackPlayer()
@@ -152,6 +163,7 @@ public class AliensAI : MonoBehaviour
         {
             Debug.Log($"¡ROBADO! → {elegido}");
             robado.gameObject.SetActive(false);
+            anim.SetBool("hasSteal", true);
         }
         else
         {
@@ -164,7 +176,7 @@ public class AliensAI : MonoBehaviour
         // Encuentra punto valido en NavMesh para huir
         NavMesh.SamplePosition(transform.position + dirHuir, out NavMeshHit hit, 40f, NavMesh.AllAreas);
         agent.SetDestination(hit.position);
-
+        agent.speed = fleeSpeed;   // <-------------------------SPEED CONTROL
         // Vuelve normal en 8 segundos
         Invoke(nameof(ResetContact), 8f);
     }

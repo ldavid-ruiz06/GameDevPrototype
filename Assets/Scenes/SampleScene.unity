@@ -187,6 +187,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!114 &524351278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,8 +218,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3350295c1e6802e45b076757107f8eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AliensAI
+  anim: {fileID: 1192229674}
+  patrolSpeed: 2.5
+  chaseSpeed: 8
+  fleeSpeed: 5
   agent: {fileID: 0}
   player: {fileID: 0}
+  playerTransform: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
@@ -231,6 +237,9 @@ MonoBehaviour:
   shootingOffset: 2
   sightRange: 15
   attackRange: 8
+  stoleSomething: 0
+  posReference: {fileID: 0}
+  alienState: 0
 --- !u!195 &676198950
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -546,6 +555,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1192229674 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+  m_PrefabInstance: {fileID: 5522576086364299299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1315601431
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +626,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!1 &1513899865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8924238788057264827, guid: d62da9f607cd58d4ea7938edb655ed63, type: 3}
@@ -632,6 +647,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!1 &1673017480
 GameObject:
   m_ObjectHideFlags: 0
