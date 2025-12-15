@@ -187,6 +187,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!114 &524351278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AliensAI
   agent: {fileID: 0}
   player: {fileID: 0}
+  playerTransform: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
@@ -230,7 +232,10 @@ MonoBehaviour:
   timeBetweenAttacks: 2
   shootingOffset: 2
   sightRange: 15
-  attackRange: 8
+  attackRange: 4
+  stoleSomething: 0
+  posReference: {fileID: 798408326}
+  alienState: 0
 --- !u!195 &676198950
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -482,6 +487,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &798408326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 50851825064714542, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+  m_PrefabInstance: {fileID: 5522576086364299299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044160320
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +622,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!1 &1513899865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8924238788057264827, guid: d62da9f607cd58d4ea7938edb655ed63, type: 3}
@@ -632,6 +643,7 @@ MonoBehaviour:
   range: 3
   player: {fileID: 0}
   body: {fileID: 0}
+  alien: {fileID: 0}
 --- !u!1 &1673017480
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.82
+      value: -14.91
       objectReference: {fileID: 0}
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalPosition.y
@@ -910,7 +922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.64
+      value: 13.46
       objectReference: {fileID: 0}
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalRotation.w
@@ -952,8 +964,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2739482201898124601, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+    - target: {fileID: 8917558738344281022, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -992,6 +1007,14 @@ PrefabInstance:
       propertyPath: fakeHead
       value: 
       objectReference: {fileID: 524351266}
+    - target: {fileID: 2867829101562536126, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: stolenArm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867829101562536126, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
+      propertyPath: stolenLeg
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2867829101562536126, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: stolenHead
       value: 0
@@ -1034,7 +1057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5765186253780429790, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.53
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 5765186253780429790, guid: 5db580c4206761f4c9963604b34d20ed, type: 3}
       propertyPath: m_LocalPosition.z
