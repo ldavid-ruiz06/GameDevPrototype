@@ -35,7 +35,7 @@ public class PickUpRange : MonoBehaviour
 
     void Update()
     {   
-        model.SetActive(parent.GetComponent<Renderer>().enabled);
+        if(model != null) model.SetActive(parent.GetComponent<Renderer>().enabled);
         if(parent.GetComponent<Renderer>().enabled)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
