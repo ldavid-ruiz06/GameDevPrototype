@@ -106,7 +106,7 @@ public class AliensAI : MonoBehaviour
 
         // chechar si el jugador puede verlo
         bool playerCanSeeThem = player.GetComponent<Player>().inPlayerSight(gameObject);
-        if(playerCanSeeThem || stoleSomething)
+        if(playerCanSeeThem || stoleSomething || !player.GetComponent<PlayerBodyManager>().hasBodyPart())
         {
             agent.speed = chaseSpeed;   // <------------------------------------ SPEED CONTROL
             print("El player me ve! Huyendo.");
@@ -152,23 +152,21 @@ public class AliensAI : MonoBehaviour
 
         inContactAttack = true;        // Bloquea mas robos hasta que termine de huir
         Debug.Log("ALIEN TOCA AL JUGADOR!");
-
-        // Array con nombres exactos de cosas robables
-        string[] robables = {"Arm", "Legs", "Head"};
-        string elegido = robables[Random.Range(0, robables.Length - 1)];
-
-        GameObject robado = GameObject.Find(elegido); // player ya es la referencia al Player1
-
-        if (robado != null)
+        string elegido = "";
+        do
         {
-            stoleSomething = true;
-            // desactiva el objecto
-            player.GetComponent<PlayerBodyManager>().StealBody(elegido, this.gameObject);
-        }
-        else
-        {
-            Debug.Log($"No encontró '{elegido}'");
-        }
+            // Array con nombres exactos de cosas robables
+            string[] robables = {"Head", "Arm", "Legs"};
+            elegido = robables[Random.Range(0, robables.Length)];
+        } while(!player.GetComponent<PlayerBodyManager>().hasBodyPart(elegido));
+
+        
+
+        
+        stoleSomething = true;
+        // desactiva el objecto
+        player.GetComponent<PlayerBodyManager>().StealBody(elegido, this.gameObject);
+
 
         alienState = State.Escaping;
         Escape();

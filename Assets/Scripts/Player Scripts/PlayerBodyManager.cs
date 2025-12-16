@@ -11,6 +11,8 @@ public class PlayerBodyManager : MonoBehaviour
 
     public GameObject player, head, arm, leg;
     public GameObject fakeHead, fakeArm, fakeLeg;
+    public int partStolen = 0;
+    public bool[] hasBeenStolen = {false, false, false};
 
     // events
     public UnityEvent onToggleCamera;
@@ -66,10 +68,10 @@ public class PlayerBodyManager : MonoBehaviour
         print("Stole " + part);
         switch(part)
         {
-            case "Head": 
-                stolenHead = true;
-                fakeHead.GetComponent<PickUpRange>().alien = alien;
-                break;
+            case "Head":
+                    stolenHead = true;
+                    fakeHead.GetComponent<PickUpRange>().alien = alien;
+                    break;
             case "Arm": 
                 stolenArm = true;
                 fakeArm.GetComponent<PickUpRange>().alien = alien;
@@ -80,6 +82,17 @@ public class PlayerBodyManager : MonoBehaviour
                 break;
         }
     }
-    
-    
+
+    public bool hasBodyPart(string parte = "")
+    {
+        if (partStolen < 3) return true;
+        
+        if(parte == "Head") return hasHead;
+        if(parte == "Arm") return hasArm;
+        
+        return hasLeg;
+    }
+
+
+
 }

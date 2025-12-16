@@ -44,7 +44,6 @@ public class PickUpRange : MonoBehaviour
             {
                 Transform pos = alien.GetComponent<AliensAI>().posReference.transform;
                 transform.position = pos.position;
-
             }
         }
     }
