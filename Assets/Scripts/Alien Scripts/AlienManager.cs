@@ -6,6 +6,7 @@ public class AlienManager : MonoBehaviour
 {
     public static AlienManager instance;
     public List<Alien> aliens;
+    public UnityEvent onChange;
 
     void Awake()
     {
