@@ -8,6 +8,9 @@ public class DoDamage : MonoBehaviour
     {
         Destroy(gameObject);
 
+        Life life = other.GetComponent<Life>();
+        if(life != null) life.life += -damage;
+
         
     }
 }
