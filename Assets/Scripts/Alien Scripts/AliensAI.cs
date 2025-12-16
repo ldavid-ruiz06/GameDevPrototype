@@ -21,6 +21,7 @@ public class AliensAI : MonoBehaviour
     public float sightRange = 15f;
     public float attackRange = 8f;
     public bool stoleSomething = false;
+    public string stolePart = "";
     public GameObject posReference;
 
     private bool playerInSightRange, playerInAttackRange;
@@ -106,7 +107,7 @@ public class AliensAI : MonoBehaviour
 
         // chechar si el jugador puede verlo
         bool playerCanSeeThem = player.GetComponent<Player>().inPlayerSight(gameObject);
-        if(playerCanSeeThem || stoleSomething || !player.GetComponent<PlayerBodyManager>().hasBodyPart())
+        if(playerCanSeeThem || stoleSomething || player.GetComponent<PlayerBodyManager>().partStolen >= 3)
         {
             agent.speed = chaseSpeed;   // <------------------------------------ SPEED CONTROL
             print("El player me ve! Huyendo.");
@@ -160,6 +161,7 @@ public class AliensAI : MonoBehaviour
             elegido = robables[Random.Range(0, robables.Length)];
         } while(!player.GetComponent<PlayerBodyManager>().hasBodyPart(elegido));
 
+        stolePart = elegido;
         
 
         

@@ -81,11 +81,12 @@ public class PlayerBodyManager : MonoBehaviour
                 fakeLeg.GetComponent<PickUpRange>().alien = alien;
                 break;
         }
+        partStolen++;
     }
 
     public bool hasBodyPart(string parte = "")
     {
-        if (parte == "") return partStolen < 3;
+        if (parte == "" || partStolen >= 3) return partStolen < 3;
         
         if(parte == "Head") return hasHead;
         if(parte == "Arm") return hasArm;

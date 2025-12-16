@@ -77,6 +77,8 @@ public class Shoot : MonoBehaviour
     {
         //alien.getPunch();
         print(alien.name + " got punched");
+        Life life = alien.GetComponent<Life>();
+        if(life != null) life.life += -prefab.GetComponent<DoDamage>().damage;
     }
 
     void OnDrawGizmos()
