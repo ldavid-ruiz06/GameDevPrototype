@@ -85,11 +85,10 @@ public class PlayerBodyManager : MonoBehaviour
 
     public bool hasBodyPart(string parte = "")
     {
-        if (partStolen < 3) return true;
+        if (parte == "") return partStolen < 3;
         
         if(parte == "Head") return hasHead;
         if(parte == "Arm") return hasArm;
-        
         return hasLeg;
     }
 

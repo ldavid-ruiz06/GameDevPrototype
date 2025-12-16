@@ -2713,6 +2713,8 @@ MonoBehaviour:
   fakeHead: {fileID: 0}
   fakeArm: {fileID: 0}
   fakeLeg: {fileID: 0}
+  partStolen: 0
+  hasBeenStolen: 000000
   onToggleCamera:
     m_PersistentCalls:
       m_Calls: []
@@ -2744,7 +2746,7 @@ MonoBehaviour:
   shootPoint: {fileID: 9016565309297719106}
   range: 7
   anglePlayer: 50
-  cooldown: 5
+  cooldown: 1
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256

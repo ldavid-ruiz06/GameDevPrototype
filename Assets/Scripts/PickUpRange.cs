@@ -29,8 +29,7 @@ public class PickUpRange : MonoBehaviour
         if(parent.name == "FakeHead") body.stolenHead = false;
         else if(parent.name == "FakeArm") body.stolenArm = false;
         else if(parent.transform.parent.name == "FakeLeg") body.stolenLeg = false;
-
-        alien.GetComponent<AliensAI>().stoleSomething = false;
+        body.partStolen--;
     }
 
     void Update()
@@ -38,7 +37,7 @@ public class PickUpRange : MonoBehaviour
         if(parent.GetComponent<Renderer>().enabled)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
-            if(distance < range){ pickUp();}    
+            if(distance < range && alien == null){ pickUp();}    
             
             if(alien != null)
             {
