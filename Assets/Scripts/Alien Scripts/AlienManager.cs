@@ -12,6 +12,8 @@ public class AlienManager : MonoBehaviour
     {
         if(instance == null) instance = this;
         else Destroy(this);
+
+        aliens = new List<Alien>();
     }
 
     void AddAlien(Alien alien)

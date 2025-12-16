@@ -3,6 +3,12 @@ using UnityEngine.AI;
 
 public class AliensAI : MonoBehaviour
 {
+
+    public Animator anim;
+    public float patrolSpeed = 2.5f;
+    public float chaseSpeed = 8f;
+    public float fleeSpeed = 5f;
+
     public NavMeshAgent agent;
     public GameObject player;
     public Transform playerTransform;
@@ -90,6 +96,7 @@ public class AliensAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
         if(!playerInSightRange)
         {
+            agent.speed = patrolSpeed;   // <------------------------------------ SPEED CONTROL
             print("No veo al player. Patrolling.");
             alienState = State.Patrolling;
             return;
@@ -101,12 +108,15 @@ public class AliensAI : MonoBehaviour
         bool playerCanSeeThem = player.GetComponent<Player>().inPlayerSight(gameObject);
         if(playerCanSeeThem || stoleSomething)
         {
+            agent.speed = chaseSpeed;   // <------------------------------------ SPEED CONTROL
             print("El player me ve! Huyendo.");
             alienState = State.Escaping;
             return;
         }
         else if(!playerCanSeeThem)
         {
+            ResetAnimBools();
+            agent.speed = chaseSpeed;
             print("El player no me ve! Atacando.");
             alienState = State.ChasingPlayer;
             return;
@@ -120,6 +130,11 @@ public class AliensAI : MonoBehaviour
 
     void Escape()
     {
+        ResetAnimBools();
+        anim.SetBool("isRunning", true);
+        if(stoleSomething) anim.SetBool("isStole", true);
+
+
         // Calcula direccion opuesta al jugador
         Vector3 dirHuir = (transform.position - playerTransform.position).normalized * 40f;
 
@@ -162,10 +177,15 @@ public class AliensAI : MonoBehaviour
 
     private void Patrolling()
     {
+
         // checar el jugador
         checkForPlayer();
         // si se detecto el jugador, salir de esta accion
         if(alienState != State.Patrolling) return;
+
+        ResetAnimBools();
+        anim.SetBool("isWalking", true);
+
 
 
         // Si no tiene punto de patrulla, busca uno nuevo
@@ -210,6 +230,10 @@ public class AliensAI : MonoBehaviour
 
         if(alienState != State.ChasingPlayer) return;
 
+        ResetAnimBools();
+        anim.SetBool("isRunning", true);
+
+
         // Cada frame le dice al agente que vaya a donde esta el jugador
         if(alienState == State.ChasingPlayer) agent.SetDestination(playerTransform.position);
 
@@ -248,6 +272,7 @@ public class AliensAI : MonoBehaviour
 
     private void ResetAttack()
     {
+        ResetAnimBools();
         alreadyAttacked = false;
     }
 
@@ -297,6 +322,10 @@ public class AliensAI : MonoBehaviour
         // Termina el estado de huida, vuelve a patrullar/normal
         inContactAttack = false;
         alienState = State.Patrolling;
+
+        ResetAnimBools();
+        anim.SetBool("isWalking", true);  // return to walking
+
     }
 
     private void OnDrawGizmosSelected()
@@ -306,5 +335,12 @@ public class AliensAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, sightRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+    void ResetAnimBools()//reset de los bools de las animaciones
+    {
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isRunning", false);
+        anim.SetBool("isStole", false);
     }
 }
