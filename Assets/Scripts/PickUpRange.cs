@@ -8,6 +8,7 @@ public class PickUpRange : MonoBehaviour
     public GameObject player;
     public PlayerBodyManager body;
     public GameObject alien;
+    public GameObject model;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class PickUpRange : MonoBehaviour
 
     void Update()
     {   
+        model.SetActive(parent.GetComponent<Renderer>().enabled);
         if(parent.GetComponent<Renderer>().enabled)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);

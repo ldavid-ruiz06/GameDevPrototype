@@ -49,8 +49,8 @@ public class PlayerBodyManager : MonoBehaviour
         if(stolenArm == hasArm)
         {
             hasArm = !hasArm;
-            arm.GetComponent<Renderer>().enabled = hasArm;
-            arm.GetComponent<Collider>().enabled = hasArm;
+            arm.SetActive(hasArm);
+            //arm.GetComponent<Collider>().enabled = hasArm;
             fakeArm.GetComponent<Renderer>().enabled = !hasArm;
             fakeArm.GetComponent<Collider>().enabled = !hasArm;
         }
