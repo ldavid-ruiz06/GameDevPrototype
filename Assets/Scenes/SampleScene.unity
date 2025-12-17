@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7017417964648574890, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_Name
       value: Alien_1
@@ -646,6 +650,10 @@ PrefabInstance:
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7017417964648574890, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_Name
@@ -1142,7 +1150,7 @@ MonoBehaviour:
   player: {fileID: 0}
   body: {fileID: 0}
   alien: {fileID: 0}
-  model: {fileID: 1699568415}
+  model: {fileID: 0}
 --- !u!1 &1601529875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,11 +1367,6 @@ Transform:
   - {fileID: 774855882}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1699568415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7799608682007263136, guid: d62da9f607cd58d4ea7938edb655ed63, type: 3}
-  m_PrefabInstance: {fileID: 699038841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1800556116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1411,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7017417964648574890, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_Name
@@ -1671,6 +1678,18 @@ PrefabInstance:
     - target: {fileID: 1303414209080839304, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799059968730079489, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017417964648574890, guid: 47e0afd58c29d3c42844a155c233fc87, type: 3}
       propertyPath: m_Name
