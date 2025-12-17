@@ -22,14 +22,706 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      internalID: -3100369314251171874
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Defeat
+      takeName: metarig|Defeat
+      internalID: 4983136843382895591
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Holding
+      takeName: metarig|Holding
+      internalID: -3876654782362202809
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 0
+      - path: Empty.002
+        weight: 0
+      - path: Hands
+        weight: 0
+      - path: Hands.001
+        weight: 0
+      - path: Head
+        weight: 1
+      - path: Head.001
+        weight: 0
+      - path: Head.002
+        weight: 0
+      - path: Legs
+        weight: 0
+      - path: metarig
+        weight: 0
+      - path: metarig/pelvis.L
+        weight: 0
+      - path: metarig/pelvis.L/pelvis.L_end
+        weight: 0
+      - path: metarig/pelvis.R
+        weight: 0
+      - path: metarig/pelvis.R/pelvis.R_end
+        weight: 0
+      - path: metarig/spine.002
+        weight: 0
+      - path: metarig/spine.002/spine.003
+        weight: 0
+      - path: metarig/spine.002/spine.003/shoulder.L
+        weight: 0
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/hand.L_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R
+        weight: 0
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/hand.R_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002/ear_base.L.002_end
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002
+        weight: 0
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002/ear_base.R.002_end
+        weight: 0
+      - path: metarig/thigh.L
+        weight: 0
+      - path: metarig/thigh.L/shin.L
+        weight: 0
+      - path: metarig/thigh.L/shin.L/shin.L_end
+        weight: 0
+      - path: metarig/thigh.R
+        weight: 0
+      - path: metarig/thigh.R/shin.R
+        weight: 0
+      - path: metarig/thigh.R/shin.R/shin.R_end
+        weight: 0
+      - path: Neck
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Holding_trans
+      takeName: metarig|Holding_trans
+      internalID: -5666268702729173320
+      firstFrame: 0
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Idle
+      takeName: metarig|Idle
+      internalID: -5324238279805231817
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Empty.002
+        weight: 1
+      - path: Hands
+        weight: 1
+      - path: Hands.001
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head.001
+        weight: 1
+      - path: Head.002
+        weight: 1
+      - path: Legs
+        weight: 1
+      - path: metarig
+        weight: 1
+      - path: metarig/pelvis.L
+        weight: 1
+      - path: metarig/pelvis.L/pelvis.L_end
+        weight: 1
+      - path: metarig/pelvis.R
+        weight: 1
+      - path: metarig/pelvis.R/pelvis.R_end
+        weight: 1
+      - path: metarig/spine.002
+        weight: 1
+      - path: metarig/spine.002/spine.003
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/hand.L_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/hand.R_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002/ear_base.L.002_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002/ear_base.R.002_end
+        weight: 1
+      - path: metarig/thigh.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L/shin.L_end
+        weight: 1
+      - path: metarig/thigh.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R/shin.R_end
+        weight: 1
+      - path: Neck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|post_stick
+      takeName: metarig|post_stick
+      internalID: 6129380048810400425
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|pre_running
+      takeName: metarig|pre_running
+      internalID: 2308006631146718590
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|pre_Stick
+      takeName: metarig|pre_Stick
+      internalID: 7871929816836162376
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Running
+      takeName: metarig|Running
+      internalID: -5895594989477282538
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 00000000010000000100000001000000010000000100000001000000010000000100000000000000000000000000000000000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Empty.002
+        weight: 1
+      - path: Hands
+        weight: 1
+      - path: Hands.001
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head.001
+        weight: 1
+      - path: Head.002
+        weight: 1
+      - path: Legs
+        weight: 1
+      - path: metarig
+        weight: 1
+      - path: metarig/pelvis.L
+        weight: 1
+      - path: metarig/pelvis.L/pelvis.L_end
+        weight: 1
+      - path: metarig/pelvis.R
+        weight: 1
+      - path: metarig/pelvis.R/pelvis.R_end
+        weight: 1
+      - path: metarig/spine.002
+        weight: 1
+      - path: metarig/spine.002/spine.003
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/hand.L_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/hand.R_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002/ear_base.L.002_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002/ear_base.R.002_end
+        weight: 1
+      - path: metarig/thigh.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L/shin.L_end
+        weight: 1
+      - path: metarig/thigh.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R/shin.R_end
+        weight: 1
+      - path: Neck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Sticked
+      takeName: metarig|Sticked
+      internalID: 3250378259822198967
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Sticked.001
+      takeName: metarig|Sticked.001
+      internalID: 386947785775602013
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: metarig|Walking
+      takeName: metarig|Walking
+      internalID: -4027686426356288868
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Empty.002
+        weight: 1
+      - path: Hands
+        weight: 1
+      - path: Hands.001
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head.001
+        weight: 1
+      - path: Head.002
+        weight: 1
+      - path: Legs
+        weight: 1
+      - path: metarig
+        weight: 1
+      - path: metarig/pelvis.L
+        weight: 1
+      - path: metarig/pelvis.L/pelvis.L_end
+        weight: 1
+      - path: metarig/pelvis.R
+        weight: 1
+      - path: metarig/pelvis.R/pelvis.R_end
+        weight: 1
+      - path: metarig/spine.002
+        weight: 1
+      - path: metarig/spine.002/spine.003
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/hand.L/hand.L_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/hand.R/hand.R_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.L.001/ear_base.L/ear_base.L.002/ear_base.L.002_end
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002
+        weight: 1
+      - path: metarig/spine.002/spine.003/spine.005/spine.006/ear_base.R.001/ear_base.R/ear_base.R.002/ear_base.R.002_end
+        weight: 1
+      - path: metarig/thigh.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L
+        weight: 1
+      - path: metarig/thigh.L/shin.L/shin.L_end
+        weight: 1
+      - path: metarig/thigh.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R
+        weight: 1
+      - path: metarig/thigh.R/shin.R/shin.R_end
+        weight: 1
+      - path: Neck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -55,7 +747,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 74
     minBoneWeight: 0.5
-    optimizeBones: 0
+    optimizeBones: 1
     generateMeshLods: 0
     meshLodGenerationFlags: 0
     maximumMeshLod: -1
@@ -129,11 +821,6 @@ ModelImporter:
       position: {x: -0.20707215, y: -0.29676437, z: 0.7814741}
       rotation: {x: -0.06357713, y: -0.69386476, z: 0.70798373, w: 0.115189746}
       scale: {x: 13.116941, y: 13.116936, z: 13.116941}
-    - name: Neck
-      parentName: lilAlienFF02(Clone)
-      position: {x: -0.009904879, y: 0.41528556, z: 0.80955726}
-      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
-      scale: {x: 18.144073, y: 18.144073, z: 18.144073}
     - name: metarig
       parentName: lilAlienFF02(Clone)
       position: {x: -0, y: -1.4892355, z: 0.5555451}
@@ -202,12 +889,12 @@ ModelImporter:
     - name: shoulder.L
       parentName: spine.003
       position: {x: -0.00018299984, y: 0.002070361, z: 0.0007866682}
-      rotation: {x: -0.5292864, y: 0.46872142, z: 0.37356707, w: 0.6005031}
+      rotation: {x: -0.60750073, y: 0.34720513, z: 0.35482553, w: 0.62007284}
       scale: {x: 1.0000007, y: 1.0000023, z: 1.0000021}
     - name: upper_arm.L
       parentName: shoulder.L
       position: {x: -0.000021770313, y: 0.0019126902, z: -0.0006747604}
-      rotation: {x: 0.091964126, y: -0.75309306, z: 0.16031952, w: 0.63141996}
+      rotation: {x: 0.18332909, y: -0.7329528, z: 0.16909525, w: 0.632912}
       scale: {x: 1.0000005, y: 0.9999998, z: 1.0000011}
     - name: forearm.L
       parentName: upper_arm.L
@@ -227,12 +914,12 @@ ModelImporter:
     - name: shoulder.R
       parentName: spine.003
       position: {x: 0.0001829974, y: 0.002070361, z: 0.0007866685}
-      rotation: {x: -0.5292864, y: -0.46872157, z: -0.37356725, w: 0.60050285}
+      rotation: {x: -0.6075007, y: -0.34720534, z: -0.3548256, w: 0.6200728}
       scale: {x: 1.0000006, y: 1.0000026, z: 1.0000018}
     - name: upper_arm.R
       parentName: shoulder.R
       position: {x: 0.000021770255, y: 0.0019126901, z: -0.00067476055}
-      rotation: {x: 0.09196445, y: 0.7530931, z: -0.16031975, w: 0.6314198}
+      rotation: {x: 0.18332934, y: 0.7329529, z: -0.16909535, w: 0.63291174}
       scale: {x: 1.0000002, y: 0.99999946, z: 1.0000008}
     - name: forearm.R
       parentName: upper_arm.R
@@ -272,7 +959,7 @@ ModelImporter:
     - name: thigh.R
       parentName: metarig
       position: {x: 0.0013841186, y: -0.0012808087, z: 0.0037040887}
-      rotation: {x: 0.7408323, y: 0.09931589, z: 0.08927258, w: -0.65828127}
+      rotation: {x: 0.7463576, y: 0.11457684, z: 0.10499145, w: -0.64714706}
       scale: {x: 0.9999997, y: 1.0000006, z: 1}
     - name: shin.R
       parentName: thigh.R
@@ -287,7 +974,7 @@ ModelImporter:
     - name: thigh.L
       parentName: metarig
       position: {x: -0.0013841186, y: -0.0012808087, z: 0.0037040887}
-      rotation: {x: 0.7408324, y: -0.099315844, z: -0.089272484, w: -0.65828127}
+      rotation: {x: 0.7463576, y: -0.11457684, z: -0.104991406, w: -0.64714706}
       scale: {x: 1, y: 1.0000002, z: 1.0000002}
     - name: shin.L
       parentName: thigh.L
@@ -299,6 +986,11 @@ ModelImporter:
       position: {x: -0, y: 0.0026073162, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: lilAlienFF02(Clone)
+      position: {x: -0.009904879, y: 0.41528556, z: 0.80955726}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 18.144073, y: 18.144073, z: 18.144073}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -313,7 +1005,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
