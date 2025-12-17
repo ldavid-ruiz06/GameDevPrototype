@@ -251,6 +251,7 @@ MonoBehaviour:
   sightRange: 15
   attackRange: 8
   stoleSomething: 0
+  stolePart: 
   posReference: {fileID: 50851825064714542}
   alienState: 0
 --- !u!195 &2236335883875833239
@@ -367,7 +368,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186172521884290325}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 6c98f20cdac2c964ca69ef598af47656, type: 2}
   m_Controller: {fileID: 9100000, guid: 621fcbed2ad3d3643bb62fb9e8387578, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

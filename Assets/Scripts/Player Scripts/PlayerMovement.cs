@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject arm;
     private PlayerBodyManager body;
 
+    public Animator animator;
+
 
     Vector3 eulerAngles;
 
@@ -35,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputValue value)
     {
         movementValue = value.Get<Vector2>() * speed;
+
+        animator.SetBool("isWalking", movementValue != Vector2.zero);
     }
 
     public void OnLook(InputValue value)
@@ -62,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         eulerAngles = cam.transform.localEulerAngles;
         if(eulerAngles.x >  180f) eulerAngles.x -= 360f;
-        eulerAngles.x = Mathf.Clamp(eulerAngles.x - angleIncrement, -40f, 40f);
+        eulerAngles.x = Mathf.Clamp(eulerAngles.x - angleIncrement, -30f, 30f);
         cam.transform.localEulerAngles = eulerAngles;
         arm.transform.localEulerAngles = eulerAngles;
 
@@ -82,8 +86,9 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.Rotate(0, lookValue.x * Time.deltaTime, 0); 
 
-        // gravity (i hate this but whatever)
+        // gravity (i hate this but whatever) //wdym, it's actually how gravity works irl
         if (velocityY > 0) velocityY += -gravity;
+        
     }
 
 
