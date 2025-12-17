@@ -368,15 +368,21 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3186172521884290325}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 6c98f20cdac2c964ca69ef598af47656, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 0c58d7906d814ba4b91b6f3bbcd76ab8, type: 3}
   m_Controller: {fileID: 9100000, guid: 621fcbed2ad3d3643bb62fb9e8387578, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'thigh.R'\n\tTransform 'spine.002'\n\tTransform
+    'thigh.L'\n\tTransform 'thigh.R'\n\tTransform 'upper_arm.L'\n\tTransform 'ear_base.L.001'\n\tTransform
+    'shin.R'\n\tTransform 'spine.006'\n\tTransform 'spine.003'\n\tTransform 'ear_base.R.001'\n\tand
+    more ...\n\tFrom animation clip 'metarig_Idle'\n\tFrom animation clip 'metarig_Running'\n\tFrom
+    animation clip 'metarig_Walking'\n\tFrom animation clip 'metarig_Holding'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
