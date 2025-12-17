@@ -7,7 +7,7 @@ public class AliensAI : MonoBehaviour
     public Animator anim;
     public float patrolSpeed = 2.5f;
     public float chaseSpeed = 8f;
-    public float fleeSpeed = 5f;
+    public float fleeSpeed = 3f;
 
     public NavMeshAgent agent;
     public GameObject player;
