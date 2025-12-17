@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
         //rigidbody = GetComponent<Rigidbody>();
     }
 
+    
+
     public void OnMove(InputValue value)
     {
         movementValue = value.Get<Vector2>() * speed;

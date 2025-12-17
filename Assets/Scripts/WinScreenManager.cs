@@ -13,6 +13,11 @@ public class WinScreenManager : MonoBehaviour
     
     void RestartGame()
     {
-        SceneManager.LoadScene("ForestLevel");  // Carga tu escena principal (índice 0)
+        
+
+        SceneManager.LoadScene("SampleScene");  // Carga tu escena principal 
+
+        
     }
+
 }
