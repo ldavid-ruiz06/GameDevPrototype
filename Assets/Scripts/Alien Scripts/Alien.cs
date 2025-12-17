@@ -4,11 +4,11 @@ public class Alien : MonoBehaviour
 {
     void Start()
     {
-        AlienManager.instance.aliens.Add(this);
+        AlienManager.instance.AddAlien(this);
     }
 
     void OnDestroy()
     {
-        AlienManager.instance.aliens.Remove(this);
+        AlienManager.instance.RemoveAlien(this);
     }
 }
