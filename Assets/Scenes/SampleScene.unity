@@ -869,6 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   player: {fileID: 2135366630}
   playerBody: {fileID: 2135366633}
+  alienManager: {fileID: 1673017482}
 --- !u!4 &1315601433
 Transform:
   m_ObjectHideFlags: 0
