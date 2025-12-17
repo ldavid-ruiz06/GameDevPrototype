@@ -16,13 +16,13 @@ public class AlienManager : MonoBehaviour
         aliens = new List<Alien>();
     }
 
-    void AddAlien(Alien alien)
+    public void AddAlien(Alien alien)
     {
         aliens.Add(alien);
         onChange.Invoke();
     }
 
-    void RemoveAlien(Alien alien)
+    public void RemoveAlien(Alien alien)
     {
         aliens.Remove(alien);
         onChange.Invoke();

@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameModeManager : MonoBehaviour
 {
-    // public vars
-    [SerializeField]
-    public GameObject player;
-    [SerializeField]
-    PlayerBodyManager playerBody;
-    
-
-    void Awake()
+    void Start()
     {
-        
+        AlienManager.instance.onChange.AddListener(CheckWinCondition);
     }
-
+    
+    void CheckWinCondition()
+    {
+        if (AlienManager.instance.aliens.Count <= 0)
+        {
+            SceneManager.LoadScene("WinScreen");
+        }
+    }
 }
